@@ -9,7 +9,7 @@ for path, subdirs, files in os.walk(root):
 
 for add in lista:
     if(add!="imprimir.py"):
-        cmd = "code2pdf -l "+add
+        cmd = "code2pdf -l "+add+ " > /dev/null 2>&1"
         os.system(cmd)
 
 pdfs=[]
